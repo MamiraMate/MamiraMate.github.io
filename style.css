@@ -1,5 +1,80 @@
-footer {
+html {
+    background-color: darkgoldenrod;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: larger;
+    font-family: 'roboto', sans-serif;
+    margin: 0px 200px;
+    border-left: 5px black solid;
+    border-right: 5px black solid;
+    background-color: white;
+    min-width: 400px;
+}
+
+header {
+    color: white;
     height: 300px;
+    background-color: gold;
+}
+
+header table { 
+    /* NEM MŰKÖDIK*/
+    column-gap: 50px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(4, min-content);
+    column-gap: 30px;
+    border-bottom: 3px black solid;
+    border-top: 3px black solid;
+    position: sticky;
+    top: 5px;
+    background-color: white;
+}
+
+nav div {
+    padding: 5px;
+    justify-content:center;
+    transition: 0.3s;
+    /* border: 1px red solid; */
+    align-content: center;
+}
+
+nav div:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+nav div a {
+    text-decoration: none;
+}
+
+h1, h2, p {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.grid-item img {
+    width: 50%;
+}
+
+#shop-grid th {
+    text-align: center;
+}
+
+#shop-grid {
+    border: 1px black solid;
+}
+
+.grid-item {
+    border: 1px black solid;
+}
+
+footer {
+    height: 200px;
     background-color: black;
     position: sticky;
     bottom: 0px;
@@ -11,4 +86,5 @@ html {
 
 footer p, h2 {
     color: white;
+    font-size: smaller;
 }
