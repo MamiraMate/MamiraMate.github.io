@@ -19,14 +19,24 @@ header {
     background-color: gold;
 }
 
-header table { 
-    /* NEM MŰKÖDIK*/
-    column-gap: 50px;
+header h1 {
+    font-size: 50px;
+    color: white;
+}
+
+header h2 {
+    font-size: 30px;
+    color: white;
+}
+
+main h1{
+    color: black;
+    font-size: 50px;
 }
 
 nav {
     display: grid;
-    grid-template-columns: repeat(4, min-content);
+    grid-template-columns: repeat(3, min-content);
     column-gap: 30px;
     border-bottom: 3px black solid;
     border-top: 3px black solid;
@@ -71,10 +81,12 @@ h1, h2, p {
 
 .grid-item {
     border: 1px black solid;
+    padding: 1px;
+    text-align: center;
 }
 
 footer {
-    height: 200px;
+    height: 250px;
     background-color: black;
     position: sticky;
     bottom: 0px;
@@ -84,7 +96,52 @@ html {
     margin: 0px;
 }
 
-footer p, h2 {
+footer p, h2, h1 {
     color: white;
     font-size: smaller;
+}
+
+footer>table {
+    max-width: max-content;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+footer ul {
+    color: white;
+    list-style-type: georgian;
+}
+
+#shopgomb {
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: 300ms;
+    border-radius: 5%;
+    border: 1px black solid;
+}
+
+#shopgomb:hover {
+    transition: 300ms;
+    box-shadow: 3px 3px 5px black;
+}
+
+#gomb {
+    justify-content: center;
+}
+
+#shop-grid th {
+    justify-content: center;
+}
+
+hr {
+    width: 90%;
+}
+
+footer h1 {
+    font-size: larger;
+}
+
+footer h2 {
+    font-size: medium;
 }
