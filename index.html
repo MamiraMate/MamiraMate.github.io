@@ -7,12 +7,30 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Méhecske shop</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+        }
+
+        main h2, h1 {
+            color: black;
+        }
+        h1 {
+            font-size: 50px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <table>
             <td>
-                <h1>Méhecske webshop</h1>
+                <h1>Méhecske shop</h1>
                 <h2>És amit tudni kell rólunk</h2>
             </td>
             <td>
@@ -25,8 +43,7 @@
     <nav>
         <div><a href="#aboutUs">Rólunk</a></div>
         <div><a href="#history">Történetünk</a></div>
-        <div><a id="shop" href="">Bolt</a></div>
-        <div><a id="gallery" href="">Galléria</a></div>
+        <div><a href="#shop">Bolt</a></div>
     </nav>
     <main>
         <table>
@@ -52,8 +69,8 @@
                 </table>
             </tr>
             <hr>
-            <tr id="history">
-                <h1>Történetünk</h1>
+            <tr>
+                <h1 id="history">Történetünk</h1>
                 <h2>1200-as évek előtt</h2>
                 <p>
                     Akkor még csak ketten voltunk a párommal, amikor eldöntöttük, hogy kéne egy családot alapítani. És Isten megáldott 
@@ -84,10 +101,15 @@
                     is lesz, akkor veszünk majd egy családi autót. Szóval, légy szíves, vegyél valamit tőlünk, mert nagyon menő lenne egy 
                     családi Trabant.
                 </p>
+                <h2>Jövő</h2>
+                <p>
+                    Ha egyszer nagyon beindul majd az üzlet, és sikerült mindent megvenni, amit meg akarunk, akkor végre egy életre el mehetünk majd nyugdíjba. Légy szíves vegyetek minnél
+                    több árut, hogy minnél hamarabb kő gazdagok legyünk. Köszi, thx.
+                </p>
             </tr>
             <hr>
             <tr>
-                <h1>Bolt</h1>
+                <h1 id="shop">Bolt</h1>
                 <table id="shop-grid">
                     <tr>
                         <th>Termékek</th>
@@ -121,56 +143,20 @@
                         <td class="grid-item">457.899 ft</td>
                     </tr>
                 </table>
-                <button id="shopgomb">Hol vásárolhatom meg?</button>
+                <div id="gomb">
+                    <button id="shopgomb">Hol vásárolhatom meg?</button>
+                </div>
             </tr>
             <hr>
-            <tr>
-                <h1>Galléria</h1>
-            </tr>
         </table>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt numquam id, voluptas, accusamus consequatur obcaecati veritatis quasi dignissimos mollitia nemo explicabo. Veniam ducimus, quos quia corporis sit tempora cumque harum?
-        Iusto, rerum tenetur vero eligendi officia cupiditate nemo exercitationem laborum velit praesentium blanditiis mollitia repellat aspernatur, ab odio, voluptatum optio ipsa corrupti. Nisi atque ad fugit deserunt voluptate pariatur odit!
-        Libero accusamus minus maxime blanditiis pariatur cum cupiditate. Libero cumque nemo provident sint fugiat ea repellendus recusandae accusamus, quia illum. Reiciendis quibusdam asperiores iure est, et cumque ea praesentium recusandae!
-        Illum praesentium placeat obcaecati est quibusdam, reprehenderit soluta consectetur optio. Explicabo suscipit voluptatibus, dolore aliquid ullam doloribus repudiandae libero placeat, sit illo veritatis vel dignissimos obcaecati autem quae fugiat hic.
-        Modi corrupti quasi eos, in labore ut vel! Sed beatae deserunt odit pariatur magni suscipit temporibus ab rerum consequatur quas magnam, fuga doloremque reprehenderit libero iusto a neque quisquam non!
-        Doloribus laudantium dolores commodi illum doloremque corrupti incidunt laboriosam odio nostrum beatae accusamus veniam ipsam odit cum ducimus inventore veritatis sit nulla quam, est blanditiis repellendus facilis. Quaerat, soluta accusamus.
-        Ut fuga suscipit recusandae veritatis quae sed beatae cum totam eveniet dolores! Quas obcaecati eum blanditiis earum unde, rem modi atque dignissimos dolore, optio quo laborum minus, esse dolorum excepturi.
-        Obcaecati eligendi, provident sapiente aperiam quam doloremque labore repellat at ipsa, molestias et. Aspernatur perferendis error esse facilis rerum veniam, aperiam molestiae similique nobis hic atque aliquam ad ipsum quaerat.
-        Modi eaque expedita a consequuntur magni quaerat eveniet incidunt harum pariatur dignissimos voluptatem fugit, ut ea vel possimus et non quia repellendus enim veritatis repudiandae qui ipsa. Ipsa, minima reprehenderit!
-        Nobis dolore quam repudiandae odit, aliquam suscipit accusantium delectus obcaecati deleniti nostrum autem possimus fugit in quaerat provident dicta enim debitis est amet architecto. Dignissimos velit odio maiores sit? Pariatur.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt numquam id, voluptas, accusamus consequatur obcaecati veritatis quasi dignissimos mollitia nemo explicabo. Veniam ducimus, quos quia corporis sit tempora cumque harum?
-        Iusto, rerum tenetur vero eligendi officia cupiditate nemo exercitationem laborum velit praesentium blanditiis mollitia repellat aspernatur, ab odio, voluptatum optio ipsa corrupti. Nisi atque ad fugit deserunt voluptate pariatur odit!
-        Libero accusamus minus maxime blanditiis pariatur cum cupiditate. Libero cumque nemo provident sint fugiat ea repellendus recusandae accusamus, quia illum. Reiciendis quibusdam asperiores iure est, et cumque ea praesentium recusandae!
-        Illum praesentium placeat obcaecati est quibusdam, reprehenderit soluta consectetur optio. Explicabo suscipit voluptatibus, dolore aliquid ullam doloribus repudiandae libero placeat, sit illo veritatis vel dignissimos obcaecati autem quae fugiat hic.
-        Modi corrupti quasi eos, in labore ut vel! Sed beatae deserunt odit pariatur magni suscipit temporibus ab rerum consequatur quas magnam, fuga doloremque reprehenderit libero iusto a neque quisquam non!
-        Doloribus laudantium dolores commodi illum doloremque corrupti incidunt laboriosam odio nostrum beatae accusamus veniam ipsam odit cum ducimus inventore veritatis sit nulla quam, est blanditiis repellendus facilis. Quaerat, soluta accusamus.
-        Ut fuga suscipit recusandae veritatis quae sed beatae cum totam eveniet dolores! Quas obcaecati eum blanditiis earum unde, rem modi atque dignissimos dolore, optio quo laborum minus, esse dolorum excepturi.
-        Obcaecati eligendi, provident sapiente aperiam quam doloremque labore repellat at ipsa, molestias et. Aspernatur perferendis error esse facilis rerum veniam, aperiam molestiae similique nobis hic atque aliquam ad ipsum quaerat.
-        Modi eaque expedita a consequuntur magni quaerat eveniet incidunt harum pariatur dignissimos voluptatem fugit, ut ea vel possimus et non quia repellendus enim veritatis repudiandae qui ipsa. Ipsa, minima reprehenderit!
-        Nobis dolore quam repudiandae odit, aliquam suscipit accusantium delectus obcaecati deleniti nostrum autem possimus fugit in quaerat provident dicta enim debitis est amet architecto. Dignissimos velit odio maiores sit? Pariatur.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt numquam id, voluptas, accusamus consequatur obcaecati veritatis quasi dignissimos mollitia nemo explicabo. Veniam ducimus, quos quia corporis sit tempora cumque harum?
-        Iusto, rerum tenetur vero eligendi officia cupiditate nemo exercitationem laborum velit praesentium blanditiis mollitia repellat aspernatur, ab odio, voluptatum optio ipsa corrupti. Nisi atque ad fugit deserunt voluptate pariatur odit!
-        Libero accusamus minus maxime blanditiis pariatur cum cupiditate. Libero cumque nemo provident sint fugiat ea repellendus recusandae accusamus, quia illum. Reiciendis quibusdam asperiores iure est, et cumque ea praesentium recusandae!
-        Illum praesentium placeat obcaecati est quibusdam, reprehenderit soluta consectetur optio. Explicabo suscipit voluptatibus, dolore aliquid ullam doloribus repudiandae libero placeat, sit illo veritatis vel dignissimos obcaecati autem quae fugiat hic.
-        Modi corrupti quasi eos, in labore ut vel! Sed beatae deserunt odit pariatur magni suscipit temporibus ab rerum consequatur quas magnam, fuga doloremque reprehenderit libero iusto a neque quisquam non!
-        Doloribus laudantium dolores commodi illum doloremque corrupti incidunt laboriosam odio nostrum beatae accusamus veniam ipsam odit cum ducimus inventore veritatis sit nulla quam, est blanditiis repellendus facilis. Quaerat, soluta accusamus.
-        Ut fuga suscipit recusandae veritatis quae sed beatae cum totam eveniet dolores! Quas obcaecati eum blanditiis earum unde, rem modi atque dignissimos dolore, optio quo laborum minus, esse dolorum excepturi.
-        Obcaecati eligendi, provident sapiente aperiam quam doloremque labore repellat at ipsa, molestias et. Aspernatur perferendis error esse facilis rerum veniam, aperiam molestiae similique nobis hic atque aliquam ad ipsum quaerat.
-        Modi eaque expedita a consequuntur magni quaerat eveniet incidunt harum pariatur dignissimos voluptatem fugit, ut ea vel possimus et non quia repellendus enim veritatis repudiandae qui ipsa. Ipsa, minima reprehenderit!
-        Nobis dolore quam repudiandae odit, aliquam suscipit accusantium delectus obcaecati deleniti nostrum autem possimus fugit in quaerat provident dicta enim debitis est amet architecto. Dignissimos velit odio maiores sit? Pariatur.</p>
-        <p id="lul">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt numquam id, voluptas, accusamus consequatur obcaecati veritatis quasi dignissimos mollitia nemo explicabo. Veniam ducimus, quos quia corporis sit tempora cumque harum?
-        Iusto, rerum tenetur vero eligendi officia cupiditate nemo exercitationem laborum velit praesentium blanditiis mollitia repellat aspernatur, ab odio, voluptatum optio ipsa corrupti. Nisi atque ad fugit deserunt voluptate pariatur odit!
-        Libero accusamus minus maxime blanditiis pariatur cum cupiditate. Libero cumque nemo provident sint fugiat ea repellendus recusandae accusamus, quia illum. Reiciendis quibusdam asperiores iure est, et cumque ea praesentium recusandae!
-        Illum praesentium placeat obcaecati est quibusdam, reprehenderit soluta consectetur optio. Explicabo suscipit voluptatibus, dolore aliquid ullam doloribus repudiandae libero placeat, sit illo veritatis vel dignissimos obcaecati autem quae fugiat hic.
-        Modi corrupti quasi eos, in labore ut vel! Sed beatae deserunt odit pariatur magni suscipit temporibus ab rerum consequatur quas magnam, fuga doloremque reprehenderit libero iusto a neque quisquam non!
-        Doloribus laudantium dolores commodi illum doloremque corrupti incidunt laboriosam odio nostrum beatae accusamus veniam ipsam odit cum ducimus inventore veritatis sit nulla quam, est blanditiis repellendus facilis. Quaerat, soluta accusamus.
-        Ut fuga suscipit recusandae veritatis quae sed beatae cum totam eveniet dolores! Quas obcaecati eum blanditiis earum unde, rem modi atque dignissimos dolore, optio quo laborum minus, esse dolorum excepturi.
-        Obcaecati eligendi, provident sapiente aperiam quam doloremque labore repellat at ipsa, molestias et. Aspernatur perferendis error esse facilis rerum veniam, aperiam molestiae similique nobis hic atque aliquam ad ipsum quaerat.
-        Modi eaque expedita a consequuntur magni quaerat eveniet incidunt harum pariatur dignissimos voluptatem fugit, ut ea vel possimus et non quia repellendus enim veritatis repudiandae qui ipsa. Ipsa, minima reprehenderit!
-        Nobis dolore quam repudiandae odit, aliquam suscipit accusantium delectus obcaecati deleniti nostrum autem possimus fugit in quaerat provident dicta enim debitis est amet architecto. Dignissimos velit odio maiores sit? Pariatur.</p>
     </main>
     <footer>
         <table>
+        <tr>
+            <td>
+                <h1>További infók</h1>
+            </td>
+        </tr>
             <tr>
               <td>
                 <h2>Kérdésed van?</h2>
@@ -196,7 +182,7 @@
                                   <li><a href="https://glorybee.com/" target="_blank">glorybee</a></li>
                                   <li><a href="https://honey.com/" target="_blank">honey</a></li>
                                   <li><a href="https://www.thehoneyshopindia.com/" target="_blank">thehoneyshopindia</a></li>
-                                  <li><a href="https://thehoneyjarhome.com/" target="_blank">thehoneyjarhome</a></li>
+                                  <li><a href="https://thehoneyjarhome.com/">thehoneyjarhome</a></li>
                               </ul>
                           </td>
                           <td>
